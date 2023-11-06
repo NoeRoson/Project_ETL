@@ -11,7 +11,7 @@ El **objetivo último** es el análisis del impacto que tienen las campañas de 
 
 ## Pasos seguidos
 
-### 1. [Extracción de los datos:](https://github.com/NoeRoson/Project_ETL/blob/main/Notebooks/1_Extraccion_webscrap.ipynb)
+### [1. Extracción de los datos:](https://github.com/NoeRoson/Project_ETL/blob/main/Notebooks/1_Extraccion_webscrap.ipynb)
 
 Se escogen dos métodos de extracción de los datos:
 - **Descarga de tres archivos .csv** del Portal Estadístico Delegación del Gobierno contra la Violencia de Género, los cuales recogen por provincia, mes y año (de 2007 a 2023):
@@ -27,14 +27,14 @@ Se escogen dos métodos de extracción de los datos:
 Con toda esta información se crea un archivo csv que contiene las fechas de publicación y las urls de cada sitio web.
 
 
-### 2. [Transformación y limpieza de los datos:](https://github.com/NoeRoson/Project_ETL/blob/main/Notebooks/2_Transformacion_datos.ipynb)
+### [2. Transformación y limpieza de los datos:](https://github.com/NoeRoson/Project_ETL/blob/main/Notebooks/2_Transformacion_datos.ipynb)
 
 - Con los datos extraídos de los archivos .csv se procede a la limpieza de los mismos para obtener únicamente aquellos registros entre 2020 y 2023 y mantener el mes y la provincia.
 
 - Con las fechas scrapeadas de las campañas de prevención, se crea un nuevo archivo csv con el mes, el año y la url de cada una de ellas.
 
 
-### 3. [Carga de los datos en MongoDB:](https://github.com/NoeRoson/Project_ETL/blob/main/Notebooks/3_Carga_MongoDB.ipynb)
+### [3. Carga de los datos en MongoDB:](https://github.com/NoeRoson/Project_ETL/blob/main/Notebooks/3_Carga_MongoDB.ipynb)
 
 Con los cuatro archivos resultantes se crea una base de datos en MongoDB y se exportan en formato JSON para futuros análisis de datos. Se realizan consultas a la base de datos para comprobar su correcto funcionamiento.
 
